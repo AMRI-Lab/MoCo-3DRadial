@@ -12,11 +12,16 @@ We propose a rigid-body motion correction methodology for high-resolution 3D rad
 4. tiny-cuda-nn
 
 ## Files Description
+    ├── config.yaml              # Network and training parameters
+    ├── kspace_correct.py        # K-space correction based on estimated motion parameters 
+    ├── run_demo.py              # Entry script for running the demo
+    ├── train.pyc                # Model and training process
+    ├── utils.pyc                # Utility functions
+    └── data/
+        ├── gt_mot               # The ground truth of motion parameters
+        ├── recon                # The reconstruction result
+        ├── kdata.h5             # Simulated stack-of-stars k-space data
+        └── rotAngle.mat         # The rotation angle for trajectory calculation
+## Usage
 
-SUMMIT/
-
-    ├── ReadMe.md           // 帮助文档
-    
-    ├── AutoCreateDDS.py    // 合成DDS的 python脚本文件
-    
-    ├── DDScore             // DDS核心文件库，包含各版本的include、src、lib文件夹，方便合并
+You can run "run_demo.py" to test the performance of our method.
