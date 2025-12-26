@@ -14,10 +14,9 @@ We propose a rigid-body motion correction methodology for high-resolution 3D rad
 ## Files Description
 
 SUMMIT/
-├── run_demo.py # Entry script for running the motion-compensated reconstruction demo
-├── model.so # Compiled motion-compensated implicit neural modeling module
-├── utils.so # Compiled utility functions for NUFFT, motion handling, and data processing
-└── README.md # Documentation and usage instructions
 
-Data/
-└── rawdata.h5 # Motion-corrupted k-space data used in the demo
+    ├── ReadMe.md           // 帮助文档
+    
+    ├── AutoCreateDDS.py    // 合成DDS的 python脚本文件
+    
+    ├── DDScore             // DDS核心文件库，包含各版本的include、src、lib文件夹，方便合并
