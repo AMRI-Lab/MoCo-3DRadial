@@ -12,6 +12,7 @@ We propose a rigid-body motion correction methodology for high-resolution 3D rad
 4. tiny-cuda-nn
 
 ## Files Description
+    MoCo/
     ├── config.yaml              # Network and training parameters
     ├── kspace_correct.py        # K-space correction based on estimated motion parameters 
     ├── run_demo.py              # Entry script for running the demo
